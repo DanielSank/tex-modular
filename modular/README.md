@@ -15,17 +15,16 @@ The Current Maintainer of this work is Daniel Thomas Sank.
 This work consists of the files modular.sty and README.md.
 ```
 
-The `\chapter`, `\section`, etc. commands in LaTeX are great until you want to orgainze your document in a modular way.
-For example, suppose you write an article about octopuses.
-This article might have `\section`'s "Habitat" and "Life cycle".
-Now suppose you want to write an article about cool animals.
-This article might have a `\section` for octopuses, and within that section, the parts about habitat and life cycle should be *sub*sections.
-We'd like to re-use the octopus article we've already written via something like an `\input` statement.
-Of course, this doesn't work in plain LaTeX because we have \section's in the octopus article.
+The `\chapter`, `\section`, etc. commands in LaTeX are great until you want to reuse document fragments in multiple containing documents where the heading levels need to be different.
+For example, suppose you write an article about octopuses containing `\section`'s "Habitat" and "Life cycle".
+Now suppose you want to write an article about sea animals with a `\section` for octopuses.
+Within that section, the parts about habitat and life cycle should be *sub*sections.
+The built-in LaTeX commands do not support this.
 
-Clearly, we need to make our headings relative rather than absolute, and we need a way to import document fragments at levels relative to the point from which they're imported.
-The [coseoul](https://www.ctan.org/pkg/coseoul?lang=en) package gives us relative headings, but it doesn't provide an import mechanism.
-This package provides the `\subimportlevel` macro, which enables fully modular importing of sub-documents and gets the relative headings right.
+We need to make our headings relative rather than absolute, and we need a way to import document fragments at levels relative to the point from which they're imported.
+The [`coseoul`](https://www.ctan.org/pkg/coseoul?lang=en) package gives us relative headings, but it doesn't provide the import mechanism we need.
+This package builds on `coseoul` providing the `\subimportlevel` macro, which enables fully modular importing of sub-documents and gets the relative headings right.
 
-For an extended discussion of the problem this module solves and how it works, see [here](https://danielsank.github.io/tex_modularity/).
+See the package documentation for a more complete description of the problem this package solves and how to use the `subimportlevel` macro.
+For an extended discussion of the modularity problem, a detailed review of failed attempts using only the `import` and `coseoul` packages, and a step-by-step explanation of how the `\subimportlevel` macro provided by this package works, see [this post](https://danielsank.github.io/tex_modularity/).
 
