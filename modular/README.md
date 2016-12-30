@@ -41,3 +41,5 @@ See `documentation/README.md` for more information.
 See the package documentation for a more complete description of the problem this package solves and how to use the `subimportlevel` macro.
 For an extended discussion of the modularity problem, a detailed review of failed attempts using only the `import` and `coseoul` packages, and a step-by-step explanation of how the `\subimportlevel` macro provided by this package works, see [this post](https://danielsank.github.io/tex_modularity/).
 
+This package is developed on [github](https://github.com/DanielSank/tex-modular).
+
