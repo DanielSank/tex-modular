@@ -30,7 +30,7 @@ This package builds on `coseoul` providing the `\subimportlevel` macro, which en
 
 ## Documentation
 
-See `modular.pdf` distributed with this package.
+See `doc/modular.pdf` distributed with this package.
 It's source is `modular.tex`.
 The source for the examples shown there are in the `documentation/example` and `documentation/example/octopus` directories.
 You can build the files there yourself to experiment with the package.
