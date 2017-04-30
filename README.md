@@ -1,5 +1,5 @@
 ```
-Copyright 2016 Daniel Thomas Sank
+Copyright 2017 Daniel Thomas Sank (sank.daniel@gmail.com)
 
 This work may be distributed and/or modified under the conditions of the LaTeX
 Project Public License, either version 1.3 of this license or (at your option)
