@@ -1,5 +1,5 @@
 The main documentation file is `modular.tex`.
-Build it to produce the package documentaiton.
+Build it to produce the package documentation.
 
 The documentation refers to an example project whose sources are in `example/`.
 Build `example/octopus/article.tex` to see a short article about octopuses.
